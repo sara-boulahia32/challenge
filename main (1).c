@@ -7,16 +7,13 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
+#include <math.h>
 int main()
 {
-
-    float C, K;
-
-
-    printf("quelle est la temperature en celcius, ");
-    scanf("%f", &C);
-    K = C + 273.15;
-    printf("la temperature en kelvin, %f", K);
+    double r; 
+    printf("rayon: ");
+    scanf("%lf", &r);
+    printf("volume de la sphere est %f ", (4/3) * M_PI * (pow(r,3)));
+    
     return 0;
 }

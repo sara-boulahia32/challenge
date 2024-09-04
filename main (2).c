@@ -7,14 +7,15 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
+#include <math.h>
 int main()
 {
-
-    float km, yards;
-    printf("quelle est la distance en km, ");
-    scanf("%f", &km);
-    yards = km * 1093.61;
-    printf("la distance en yard, %f", yards);
+    double l, L; 
+    printf("L: ");
+    scanf("%lf", &L);
+    printf("l: ");
+    scanf("%lf", &l);
+    printf("surface %.2f ", l*L);
+    
     return 0;
 }

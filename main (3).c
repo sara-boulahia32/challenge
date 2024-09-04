@@ -7,14 +7,17 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
+#include <math.h>
 int main()
 {
-
-    float km, metre;
-    printf("quelle est la vitesse en km/h, ");
-    scanf("%f", &km);
-    metre = km * 0.27778;
-    printf("la distance en m/s, %f", metre);
+    int n; 
+    printf("entrez un nombre de 4 chiffres   ");
+    scanf("%4d", &n);
+    int n1=n/1000;
+    int n2=(n/100)%10;
+    int n3=(n/10)%10;
+    int n4=n%10;
+    printf("%d devient %d%d%d%d", n, n4, n3, n2, n1);
+    
     return 0;
 }
