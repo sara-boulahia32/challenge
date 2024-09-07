@@ -7,27 +7,17 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
-int main()
-{
-    char nom[50];
-    char prenom[50];
-    char sexe[10];
-    char mail[200];
-    int age;
-    printf("entrez votre nom :");
-    scanf("%49s", nom);
-    printf("entrez votre prenom : ");
-    scanf("%49s", prenom);
-    printf("entrez votre age : ");
-    scanf("%d", &age);
-    printf("entrez votre sexe : ");
-    scanf("%9s", sexe);
-    printf("entrez votre mail : ");
-    getchar();
-    fgets(mail, sizeof(mail),stdin);
-    printf("%s %s vous avez %d ans, vous etes %s. votre adresse mail est %s", nom, prenom, age, sexe, mail);
-
-    return 0;
+#include <stdlib.h>
+int main (){
+    int a, b;
+    printf("a= ");
+    scanf("%d", &a);
+    printf("b=  \n");
+    scanf("%d", &b);
+    if (a==b){
+        printf("comme a=b le triple de la somme est : %d", 3*(a+b));
+    }else{
+        printf("a+b= %d", a+b);
+    }
+return 0;
 }
-
